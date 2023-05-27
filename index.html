@@ -2,14 +2,20 @@
 <html lang="en">
   <head>
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css./"
     />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +23,7 @@
   </head>
   <body>
     <section class="hero-characters">
-      <div class="container-hero-characters container-wrapper-hero-characters">
+      <div class="container-hero-characters wrapper-hero-characters">
         <div class="hero-characters-content">
           <h3 class="hero-characters-subtitle">Web-based platform</h3>
           <h1 class="hero-characters-title">Marvelous Adventures</h1>
@@ -31,20 +37,25 @@
 
           <ul class="hero-characters-buttons">
             <li class="hero-characters-btn-item">
-              <a class="btn-hero" href="./characters.html">Characters</a>
+              <a class="btn-hero js-btn-color" href="./characters.html"
+                >Characters</a
+              >
             </li>
             <li class="hero-characters-btn-item">
               <a class="btn-hero" href="./comics.html">Comics</a>
             </li>
           </ul>
         </div>
+        <!-- === структура слайдера  ====== -->
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="hero-characters-img swiper-slide">
+            <!-- ======== синій слайдер ============= -->
+            <div class="hero-characters-img my-element swiper-slide">
               <picture>
                 <source
                   media="(min-width: 1440px)"
                   width="352"
+                  height="540"
                   srcset="
                     ./images/hero-characters-img/pantera-blue-desktop.webp,
                     ./images/hero-characters-img/pantera-blue-desktop@2x.webp
@@ -65,6 +76,7 @@
                   "
                   src="./images/hero-characters-img/mobile-pantera-blue.webp"
                   width="237"
+                  height="380"
                   alt="pantera-blue"
                   loading="lazy"
                 />
@@ -130,6 +142,9 @@
                 </div>
               </div>
             </div>
+            <!-- ======== // синій слайдер // ============= -->
+
+            <!-- ============== червоний слайдер ================ -->
 
             <div class="hero-characters-img swiper-slide">
               <picture>
@@ -156,13 +171,14 @@
                   "
                   src="./images/hero-characters-img/hero-tablet-spiderman-2.webp"
                   width="237"
+                  height="343"
                   alt="spider-man"
                   loading="lazy"
                 />
               </picture>
 
               <div class="wrapper-black-pantera">
-                <div class="box-black-pantera">
+                <div class="box-black-pantera box-spiderman-red">
                   <picture>
                     <source
                       media="(min-width: 1440px)"
@@ -181,7 +197,7 @@
                       "
                     />
                     <img
-                      class="pantera-black-img"
+                      class="spiderman-div-img"
                       srcset="
                         ./images/hero-characters-img/hero-slaider-spiderman-1@2x.webp
                       "
@@ -192,11 +208,11 @@
                     />
                   </picture>
 
-                  <div class="hero-characters-circle">
+                  <div class="hero-characters-circle circle-red">
                     <p class="hero-characters-circle-text">Spider man</p>
                   </div>
                   <a href="">
-                    <svg class="hero-characters-arrow-svg">
+                    <svg class="hero-characters-arrow-svg arrow-svg-red">
                       <use
                         href="./images/hero-characters-img/hero.svg#icon-arrow"
                       ></use>
@@ -221,7 +237,9 @@
                 </div>
               </div>
             </div>
+            <!-- ============== // червоний слайдер // ================ -->
 
+            <!-- ============= зелений слайдер ============== -->
             <div class="hero-characters-img swiper-slide">
               <picture>
                 <source
@@ -253,11 +271,11 @@
               </picture>
 
               <div class="wrapper-black-pantera">
-                <div class="box-black-pantera">
+                <div class="box-black-pantera box-halk-green">
                   <picture>
                     <source
                       media="(min-width: 1440px)"
-                      width="261"
+                      width="300"
                       srcset="
                         ./images/hero-characters-img/hero-desktop-halk-1.webp,
                         ./images/hero-characters-img/hero-desktop-halk-1@2x.webp
@@ -265,14 +283,14 @@
                     />
                     <source
                       media="(min-width: 768px)"
-                      width="261"
+                      width="300"
                       srcset="
                         ./images/hero-characters-img/hero-tablet-halk-1.webp,
                         ./images/hero-characters-img/hero-tablet-halk-1@2x.webp
                       "
                     />
                     <img
-                      class="pantera-black-img"
+                      class="halk-div-green"
                       srcset="
                         ./images/hero-characters-img/hero-tablet-halk-1@2x.webp
                       "
@@ -283,11 +301,11 @@
                     />
                   </picture>
 
-                  <div class="hero-characters-circle">
+                  <div class="hero-characters-circle halk-circule-green">
                     <p class="hero-characters-circle-text">hULK</p>
                   </div>
                   <a href="">
-                    <svg class="hero-characters-arrow-svg">
+                    <svg class="hero-characters-arrow-svg arrow-svg-green">
                       <use
                         href="./images/hero-characters-img/hero.svg#icon-arrow"
                       ></use>
@@ -312,9 +330,11 @@
                 </div>
               </div>
             </div>
+            <!-- ======= // зелений слайдер // =========== -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
+        <!-- ===  // структура слайдера  //  ====== -->
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
