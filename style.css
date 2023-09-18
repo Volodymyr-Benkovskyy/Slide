@@ -202,7 +202,7 @@ body {
   border-radius: 0px 0px 0px 4px;
   width: 237px;
   background-color: #171717;
-  background-image: url(../images/hero-characters-img/line-white.png);
+  background-image: url(./images/hero-characters-img/line-white.png);
   background-repeat: no-repeat;
   background-position: 0px 5px;
   position: relative;
@@ -516,7 +516,7 @@ body {
     width: 352px;
     margin-bottom: 32px;
     background-position: right 118px;
-    background-image: url(../images/hero-characters-img/line-desktop.png);
+    background-image: url(./images/hero-characters-img/line-desktop.png);
   }
 
   .pantera-black-img {
